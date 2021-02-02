@@ -1,0 +1,32 @@
+<!--@js(/js/module/product/product_image.js)--> 에 스와이퍼 코드
+
+나머지 css 파일 아들고옴 기존거사용
+css 내설정넣기
+
+module="product_image"
+<img src="{$big_img}">
+
+module="product_addimage"
+{$add_img}
+
+
+상세 이미지 
+{$product_detail}
+
+
+상품 상세설명 직접작성
+HTML소스
+<section class="video_wrap">
+          <iframe src="https://www.youtube.com/embed/y5JwUe53FKg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+        </section>
+
+<div class="width100">글씨를 넣어볼까요?</div>
+<img src="/iamges_temp/about1.jpg">
+          <img src="/iamges_temp/about2.jpg">
+          <img src="/iamges_temp/about3.jpg">
+          <img src="/iamges_temp/about4.jpg">
+          <img src="/iamges_temp/about5.jpg">
+          <img src="/iamges_temp/about6.jpg">
+
+슬라이드 영역에 나올 이미지 : 대표이미지등록1개, 추가이미지등록 맘대로
+

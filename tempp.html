@@ -1,0 +1,57 @@
+<div class="left_cont">
+        <section class="swiper_img_wrap">
+          
+                <div class="swiper-container" module="product_addimage">
+					<div class="swiper-wrapper swiper_img_area">
+                        <div class="swiper-slide swiper_img_box" module="product_image">
+                            <img src="{$big_img}" alt="사진1">
+                        </div>
+						<div class="swiper-slide swiper_img_box">{$add_img}</div>
+						<div class="swiper-slide swiper_img_box">{$add_img}</div>
+					</div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+				</div>
+         
+        </section>
+        <section class="video_wrap">
+          <iframe src="https://www.youtube.com/embed/y5JwUe53FKg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+        </section>
+        <section class="scroll_img_wrap">
+          {$product_detail}
+        </section>
+      </div>
+
+
+
+
+      <div class="cboth accordion" id="accordion">
+        <ul module="product_additional">
+            <li><a href="#">COMMENT<span></span></a>
+                <div class="section_wrap">{$simple_desc}</div>
+            </li><!-- //COMMENT -->
+
+            <li><a href="#">PAYMENT INFO<span></span></a>
+                <div class="section_wrap">{$payment_info}</div>
+            </li><!-- //PAYMENT INFO -->
+
+            <li><a href="#">DELIVERY INFO<span></span></a>
+                <div class="section_wrap">
+                    배송 방법 : {$shipping_method}<br>
+                    배송 지역 : {$shipping_area}<br>
+                    배송 비용 : {$shipping_fee}<br>
+                    배송 기간 : {$shipping_period}<br>
+                    배송 안내 : {$shipping_info}<br>
+                </div>
+            </li><!-- //DELIVERY INFO -->
+
+            <li><a href="#">EXCHANGE INFO<span></span></a>
+                <div class="section_wrap">{$exchange_info}</div>
+            </li><!-- //EXCHANGE INFO -->
+
+            <li><a href="#">SERVICE INFO<span></span></a>
+                <div class="section_wrap">{$service_info}</div>
+            </li><!-- //SERVICE INFO -->
+        </ul>
+    </div><!-- //accordion -->

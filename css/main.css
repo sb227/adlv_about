@@ -1,0 +1,187 @@
+@charset "UTF-8";
+/* 오프라인 샵 메인 페이지 css */
+
+/* 파일 merging(합치기) */
+@import url(reset.css);
+@import url(core.css);
+@import url(common.css);
+
+
+
+/* 레이아웃 잡기 */
+
+.cont_wrap {
+    position: relative;
+
+}
+
+.right_cont {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 25%;
+    padding: 0 1%;
+}
+
+.left_cont {
+    width: 75%;
+    height: 100%;
+    padding: 5% 0;
+}
+
+.swiper_img_wrap .swiper-button-prev,
+.swiper_img_wrap .swiper-container-rtl .swiper-button-next {
+    left: 200px;
+}
+
+.swiper_img_wrap .swiper-button-next,
+.swiper_img_wrap .swiper-container-rtl .swiper-button-prev {
+    right: 200px;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper_img_area {
+    height: 700px;
+}
+
+.left_cont section {
+    margin-bottom: 20%;
+}
+
+.swiper_img_box img {
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* 비디오영역 */
+
+.video_wrap {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+
+.video_wrap iframe {
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    width: 100%;
+    height: 100%
+}
+
+
+/* 이미지스크롤영역 */
+.scroll_img_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.scroll_img_wrap img {
+    display: block;
+    width: calc(50% - 2px);
+    margin-bottom: 4px;
+}
+
+.more_info {
+    display: flex;
+    width: 90%;
+    border: 1px solid #e4e4e4;
+    font-size: 12px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.more_info li {
+    width: 25%;
+    border-right: 1px solid #e4e4e4;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.more_info li:last-child {
+    border-right: 0;
+}
+
+.more_info li.active {
+    background-color: #f7f7f7;
+}
+
+.more_info div {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.more_info_sub {
+    width: 90%;
+    border: 1px solid #e4e4e4;
+    border-top: none;
+    margin: 0 auto;
+    line-height: 2;
+    padding: 5%;
+    font-size: 12px;
+}
+
+.more_info_sub li {
+    display: none;
+}
+
+.more_info_sub li.active {
+    display: block;
+}
+
+.select_wrap {
+    margin-top: 40px;
+}
+
+.select_wrap li {
+    margin-bottom: 30px;
+}
+
+
+.size_one, .size_two{
+    display: inline-block;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.sel_size span.active{
+    text-decoration: underline;
+}
+
+.buy_wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buy_wrap li {
+    border: 1px solid #000;
+    text-align: center;
+    height: 30px;
+    line-height: 28px;
+    background-color: #fff;
+    width: 33%;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.buy_btn {
+    background-color: #000 !important;
+    color: #fff;
+}
+
+.buy_wrap li:hover {
+    background-color: #000 !important;
+    color: #fff;
+}
