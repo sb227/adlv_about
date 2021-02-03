@@ -25,6 +25,12 @@ body {
     --swiper-theme-color:#333;
 }
 
+@media only screen and (max-width:1024px){
+    :root{
+        --swiper-theme-color:#fff;
+    }
+}
+
 .w100{
     width: 100%;
     text-align: center;
