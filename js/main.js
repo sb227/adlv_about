@@ -3,7 +3,7 @@ var mob = 0; //0-데스크탑, 1-모바일
 $(function (e) { ///////////////// JQB //////////////////////
   console.log('실행');
 
-  if ($(window).width() <= 1024) mob = 1
+  if ($(window).width() <= 768) mob = 1
   console.log("현재 상태" + mob);
 
   // 모바일일때 스와이퍼 넣기
@@ -16,7 +16,7 @@ $(function (e) { ///////////////// JQB //////////////////////
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
-      },
+      }
     });
 
 
@@ -29,11 +29,11 @@ $(function (e) { ///////////////// JQB //////////////////////
   ////// scroll 셋팅 ///////////
   $(window).scroll(function () {
       var scTop = $(this).scrollTop();
-      console.log("스위:" + scTop);
+      //console.log("스위:" + scTop);
 
       // 왼쪽 높이 구하기
       var lpos = $(".left_cont").height();
-      console.log(lpos);
+      //console.log(lpos);
 
       // 왼쪽 기준선 액션 ///
       if (scTop > lpos - gap ) {
@@ -51,7 +51,7 @@ $(function (e) { ///////////////// JQB //////////////////////
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
-    },
+    }
   });
 
   // 사이즈 클릭
